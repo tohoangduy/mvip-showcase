@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/scan_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/frgmt_margin_top"
+        android:layout_marginBottom="@dimen/header_padding_bottom"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <ImageView
+            android:id="@+id/btnClose"
+            style="@style/Header_Button"
+            android:layout_gravity="start"
+            android:src="@drawable/bg_btn_state_close" />
+
+        <CheckBox
+            android:id="@+id/btnFlash"
+            style="@style/flashButtonStyle"
+            android:checked="false"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="7dp"
+            android:layout_gravity="end"
+            />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="76dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18dp"
+            android:text="@string/label_recharge"
+            android:textColor="@color/white"/>
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin_large"
+    android:layout_marginRight="@dimen/activity_horizontal_margin_large">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@color/bg_phone_number_panel_otp"
+        card_view:cardCornerRadius="34dp"
+        card_view:cardElevation="0dp"
+        card_view:contentPadding="15dp"
+        card_view:cardUseCompatPadding="true"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="@string/your_phone_number" />
+            <TextView
+                android:id="@+id/tvIsdn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="0973345125" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_vertical"
+        android:orientation="horizontal">
+
+        <com.mq.myvtg.ui.EdRobotoRegular
+            android:id="@+id/edOTP"
+            style="@style/EditTextMV"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:maxLength="6"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:hint="@string/input_otp" />
+
+        <ImageView
+            android:layout_width="@dimen/icon_inner_edittext_size"
+            android:layout_height="@dimen/icon_inner_edittext_size"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/ic_pad" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/space_vertical"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:gravity="left">
+        <TextView
+            android:id="@+id/tvDontHaveAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="If you don't receive"/>
+        <TextView
+            android:id="@+id/btnResend"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/label_resend"
+            android:layout_marginLeft="3dp"
+            android:textColor="@color/red"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_vertical"
+        android:orientation="horizontal">
+
+        <com.mq.myvtg.ui.EdRobotoRegular
+            android:id="@+id/edNewPassword"
+            style="@style/EditTextMV"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:maxLength="30"
+            android:hint="@string/label_new_pwd" />
+
+        <ImageView
+            android:layout_width="@dimen/icon_inner_edittext_size"
+            android:layout_height="@dimen/icon_inner_edittext_size"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/ic_lock" />
+
+        <ImageButton
+            android:id="@+id/btnShowPassword"
+            android:layout_width="@dimen/icon_inner_edittext_size"
+            android:layout_height="@dimen/icon_inner_edittext_size"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/ic_eye"
+            android:clickable="true"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_vertical"
+        android:orientation="horizontal">
+
+        <com.mq.myvtg.ui.EdRobotoRegular
+            android:id="@+id/edConfirmPassword"
+            style="@style/EditTextMV"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:inputType="textPassword"
+            android:maxLength="30"
+            android:hint="@string/confirm_password" />
+
+        <ImageView
+            android:layout_width="@dimen/icon_inner_edittext_size"
+            android:layout_height="@dimen/icon_inner_edittext_size"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/ic_lock" />
+
+        <ImageButton
+            android:id="@+id/btnShowConfirmPassword"
+            android:layout_width="@dimen/icon_inner_edittext_size"
+            android:layout_height="@dimen/icon_inner_edittext_size"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/ic_eye"
+            android:clickable="true"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/btnConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/version_2_background_button_login"
+        android:clickable="true">
+
+        <com.mq.myvtg.ui.TVRobotoBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding_button"
+            android:paddingRight="@dimen/padding_button"
+            android:text="@string/confirm"
+            android:textAlignment="center"
+            android:textColor="@color/white_alpha100"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

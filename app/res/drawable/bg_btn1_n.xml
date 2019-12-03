@@ -1,0 +1,10 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="0.8dp" android:color="@color/button_background_stroke_color_n" />
+    <corners android:radius="3dp" />
+    <padding
+        android:left="0dp"
+        android:right="0dp"
+        android:top="0dp"
+        android:bottom="0dp" />
+    <solid android:color="@color/button_background_color_n"/>
+</shape>

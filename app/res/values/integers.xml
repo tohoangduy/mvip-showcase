@@ -1,0 +1,3 @@
+<resources>
+    <integer name="loading_animation_time">48</integer>
+</resources>

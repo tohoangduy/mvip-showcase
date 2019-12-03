@@ -1,0 +1,126 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        // These docs use an open ended version so that our plugin
+        // can be updated quickly in response to Android tooling updates
+
+        // We recommend changing it to the latest version from our changelog:
+        // https://docs.fabric.io/android/changelog.html#fabric-gradle-plugin
+        classpath 'io.fabric.tools:gradle:1.31.0'
+    }
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+    }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+android {
+    compileSdkVersion targetSdk
+    buildToolsVersion buildTools
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    defaultConfig {
+        applicationId "com.metfone.vip"
+        minSdkVersion minSdk
+        targetSdkVersion targetSdk
+        versionCode 35
+        versionName "1.1.5"
+        useLibrary 'org.apache.http.legacy'
+        ndk.abiFilters 'armeabi-v7a', 'arm64-v8a'//,'x86','x86_64'
+        multiDexEnabled true
+        // Support multidex: minSdkVersion 21 trở lên thì chỉ cần cái này là đủ
+    }
+
+    signingConfigs {
+        release {
+            
+        }
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/LICENSE-FIREBASE.txt'
+    }
+
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation supportDependencies.appcompat
+    implementation supportDependencies.recyclerview
+    implementation supportDependencies.cardview
+    implementation supportDependencies.design
+
+    implementation project(':android-async-http-1.4.7')
+    implementation project(':zxing-lib-extended')
+    implementation project(':trustkit-1.1.0')
+    implementation('com.crashlytics.sdk.android:crashlytics:2.6.8@aar') {
+        transitive = true
+    }
+
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.6.0-rc3'
+    implementation 'com.google.code.gson:gson:2.8.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation 'com.github.bumptech.glide:glide:3.8.0'
+    implementation 'com.google.zxing:core:3.3.0'
+    implementation group: 'org.bouncycastle', name: 'bcprov-jdk15on', version: '1.57'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'org.jetbrains:annotations:13.0'
+}
+
+apply plugin: 'com.google.gms.google-services'

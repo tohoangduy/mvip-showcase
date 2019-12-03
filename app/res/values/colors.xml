@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="transparent">#00000000</drawable>
+    <!--<drawable name="bg_error">#ed1c24</drawable>-->
+    <!--<drawable name="bg_warning">#ed1c24</drawable>-->
+    <!--<drawable name="bg_success">#f47920</drawable>-->
+    <color name="bg_error">#F2F44336</color>
+    <color name="bg_warning">#F2FF8F00</color>
+    <color name="bg_success">#F25dc63f</color>
+
+
+    <!--<color name="colorPrimary">#FAFAFA</color>-->
+    <!--<color name="colorPrimaryDark">#FAFAFA</color>-->
+    <color name="colorAccent">#2196F3</color>
+    <color name="red">#ffff0000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="text_color1">#293038</color>
+    <color name="bg_btn1_disabled">#E0E0E0</color>
+
+    <color name="home_text_color_01_new">#505151</color>
+    <color name="dlg_text_color_01">#49494b</color>
+    <color name="dlg_line_color_01">#dcddde</color>
+
+    <color name="white_alpha100">#ffffffff</color>
+
+    <color name="text_dlg">#215273</color>
+    <color name="gray_dark">#696969</color>
+    <color name="gray_light">#CCCCCC</color>
+    <color name="gray_03">#f1f2f2</color>
+
+    <color name="home_detail_header">#EEEEEE</color>
+
+    <color name="place_hole_image">#F5F5F5</color>
+    <color name="line_divide_light">#eeefef</color>
+    <color name="navigation_bar">#EEEEEE</color>
+
+    <!--################ Localization ##################-->
+    <color name="transparent">#00000000</color>
+
+    <color name="icon_color_s">#f09d31</color>
+    <color name="icon_color_n">#F05431</color>
+
+    <!-- Button -->
+    <color name="button_text_color_n">#01a19a</color>
+    <color name="button_text_color_s">#01a19a</color>
+    <color name="button_text_active_color">#01a19a</color>
+    <color name="button_background_color_n">#d4fcfa</color>
+    <color name="button_background_stroke_color_n">#d4fcfa</color>
+    <color name="button_background_color_s">#FAFAFA</color>
+    <color name="button_background_stroke_color_s">#d4fcfa</color>
+
+    <!-- text color -->
+    <color name="text_default_active_color">#01a19a</color>
+
+    <!-- Header -->
+
+    <!-- HOME -->
+
+    <color name="app_primary_color">#E92829</color>
+    <color name="bg_color_intro1">#E52628</color>
+    <color name="bg_color_intro2">#2FB3A7</color>
+    <color name="bg_color_intro3">#FFBE2E</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_inactive">#807D7D7D</color>
+    <!-- dots active colors -->
+    <color name="dot_active">#ffffff</color>
+
+    <color name="hint_text">#868686</color>
+    <color name="label_gray_color">#999999</color>
+    <color name="background_main">#E5E5E5</color>
+
+    <color name="diamond">#2FB3A7</color>
+    <color name="gold">#FFBE2E</color>
+    <color name="silver">#A49E97</color>
+    <color name="member">#E92829</color>
+    <color name="client_validate_error_text">#E8282B</color>
+    <color name="app_text_title_color">#333333</color>
+    <color name="bg_phone_number_panel_otp">#F1F1F1</color>
+    <color name="setting_text_color">#333333</color>
+    <color name="btn_text_red_color">#E52527</color>
+</resources>

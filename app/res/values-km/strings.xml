@@ -1,0 +1,195 @@
+<resources>
+    <string name="app_name">mVIP</string>
+
+    <string name="api_prefix">855</string>
+    <string name="app_code">MyVTG</string>
+
+    <!--utilities-->
+    <!--<string name="label_tab_02">ឧបករណ៍ប្រើប្រាស់</string>-->
+
+    <!-- Common strings -->
+    <string name="label_yes">បាទ</string>
+    <string name="label_no">ទេ</string>
+    <string name="label_search">ស្វែងរក​</string>
+    <string name="label_close">បិទ</string>
+    <string name="msg_confirm_logout">តើអ្នកចង់ចេញពីគណនីមែនទេ?</string>
+    <string name="label_btn_confirm_agree">បាទ</string>
+    <string name="currency_unit">ដុល្លារ</string>
+    <string name="format_currency_double">#,###,###.##</string>
+    <string name="format_currency_integer">#,###,###</string>
+    <string name="str_time_hour">ម៉ោង</string>
+    <string name="str_time_minute">នាទី</string>
+    <string name="str_time_second">វិនាទី</string>
+
+    <!-- Login -->
+    <string name="label_password">លេខសម្ងាត់</string>
+    <string name="label_forgot_password">ភ្លេច​លេខសម្ងាត់?</string>
+    <string name="label_do_not_have_account">មិនមានគណនី?</string>
+    <string name="label_signup">ចុះ​ឈ្មោះ</string>
+    <string name="label_resend">ផ្ញើម្ដងទៀត!</string>
+    <string name="msg_warning_enter_otp">សូមបញ្ចូលកូដ OTP</string>
+
+    <!-- Home -->
+
+    <!-- Home Detail -->
+
+    <!-- Tra Cuoc -->
+    <!-- REMEMBER to keep space beetween time and date -->
+
+    <!-- Nap Cuoc -->
+
+    <!-- Utilities -->
+
+    <!--Services-->
+
+    <!-- KH than thiet -->
+
+    <!-- Mua số -->
+
+    <!-- Đổi số -->
+
+    <!-- More -->
+
+    <!-- Person Info -->
+
+
+    <!-- Person Info edit -->
+    <string name="label_btn_update">ធ្វើបច្ចុប្បន្នភាព</string>
+    <string name="label_btn_close">បិទ</string>
+
+    <!-- Change Password -->
+    <string name="label_change_pwd">ផ្លាស់ប្តូរលេខសម្ងាត់</string>
+    <string name="label_old_pwd">លេខសម្ងាត់ចាស់</string>
+    <string name="label_new_pwd">លេខសម្ងាត់​ថ្មី</string>
+
+    <!-- Find Store -->
+
+    <string name="confirm_quit_app">តើអ្នកចង់ចេញពីកម្មវិធីមែនទេ?</string>
+
+    <!--Thông tin chi tiết tài khoản-->
+
+    <!--Ứng tiền-->
+
+    <!--Chuyển tiền-->
+
+    <!--Đổi gói (Mua thêm) Data-->
+
+
+    <!--Đổi sim-->
+
+    <!--Apps-->
+
+    <!--Dialog-->
+    <string name="label_xac_nhan">ការបញ្ជាក់</string>
+    <string name="label_ok">យល់ព្រម</string>
+
+    <!--Khóa chiều gọi đi-->
+
+    <!--Restore phone number-->
+
+    <!--Chăm sóc khách hàng-->
+
+    <!--Khuyến mại-->
+
+    <!--Tin tức-->
+
+    <!--Trải nghiệm-->
+
+    <!--Sign up-->
+
+    <!--Dialog and Notification-->
+
+    <string name="msg_no_internet_connection">យគ្មានសេវាអ៊ីនធឺណិត!</string>
+    <string name="msg_change_pwd_same_pass">កូដសម្ងាត់ថ្មីត្រូវតែខុសពីកូដសម្ងាត់ចាស់</string>
+    <string name="msd_invalid_password_length">កូដសម្ងាត់ត្រូវតែមានបញ្ចូលតួអក្សរ %1$s</string>
+    <string name="button_ok">យល់ព្រម</string>
+    <!-- <string name="label_langue_name">ខ្មែរ</string> -->
+    <string name="msg_camera_framework_bug">កាមេរ៉ាមិនដំណើរការ.</string>
+    <!--lifesup_sprint_2_T8_2018_start-->
+    <!--<string name="confirmation_change_language">Confirmation</string>-->
+    <!--<string name="change_language_yes">YES</string>-->
+    <!--<string name="change_language_close">CLOSE</string>-->
+    <!--lifesup_sprint_2_T8_2018_end-->
+    <string name="decimal_dot">.</string>
+    <string name="thousand_dot">,</string>
+    <string name="url_google_play_app">https://play.google.com/store/apps/details?id=com.metfone.selfcare</string>
+    <string name="title_new_update">ធ្វើបច្ចុប្បន្នភាព</string>
+    <string name="label_btn_later">ពេលក្រោយ</string>
+    <string name="label_recharge">ស្កេន QR កូដ</string>
+
+    <!--update subscriber-->
+    <string name="verify_code">Verify code</string>
+    <string name="next">បន្ទាប់ទៀត</string>
+    <string name="subscriber_infor_title">ព័ត៌មាន</string>
+    <string name="confirm">បញ្ជាក់</string>
+    <string name="chat_call_host_ipcc">https://myccpublic.metfone.com.kh:8001</string>
+
+    <!-- label for ipcc -->
+    <string name="label_customer_service_name">Customer service</string>
+
+    <!-- feature - share -->
+    <string name="invite_toolbar_button_done">រួចរាល់</string>
+    <string name="find_information">Find information</string>
+    <string name="slide_desc1">Vestibulum metus nisl, varius non pellentesque ut, tincidunt vitae mi. Praesent auctor, nunc id semper lobortis</string>
+    <string name="slide_desc2">Vestibulum metus nisl, varius non pellentesque ut, tincidunt vitae mi. Praesent auctor, nunc id semper lobortis</string>
+    <string name="slide_desc3">Vestibulum metus nisl, varius non pellentesque ut, tincidunt vitae mi. Praesent auctor, nunc id semper lobortis</string>
+    <string name="qr_code">QR កូដ​​</string>
+    <string name="home_page">Home page</string>
+    <string name="skip">រំលង</string>
+    <string name="login_account">ចូលគណនី</string>
+    <string name="phone_number">លេខទូរស័ព្ទ</string>
+    <string name="sign_in">ចូល</string>
+    <string name="label_hotline">លេខជំនួយបន្ទាន់: 097 6 097 097</string>
+    <string name="label_website">vip.metfone.com.kh</string>
+    <string name="choose_language">ជ្រើសរើសភាសា</string>
+    <string name="str_continue">បន្ត</string>
+    <string name="input_otp">បញ្ចូល OTP</string>
+    <string name="confirm_password">បញ្ជាក់លេខសម្ងាត់</string>
+    <string name="partner_code">លេខកូដដៃគូ</string>
+    <string name="welcome">Welcome</string>
+    <string name="transaction_infor">ព័ត៌មានប្រតិបត្តិការ</string>
+    <string name="setting">ការកំណត់</string>
+    <string name="other">ផ្សេងទៀត</string>
+    <string name="help">ជំនួយ</string>
+    <string name="contact">លេខទំនាក់ទំនង</string>
+    <string name="about">អំពី</string>
+    <string name="sign_out">ចាកចេញ</string>
+    <string name="save">រក្សាទុក</string>
+    <string name="site">Site</string>
+    <string name="today">ថ្ងៃនេះ</string>
+    <string name="your_phone_number">លេខទូរស័ព្ទ​របស់​អ្នក</string>
+    <string name="password_and_confirm_password_not_same">Password and confirm password not same</string>
+    <string name="address">Address</string>
+    <string name="email">Email</string>
+    <string name="address_metfone_building">Address: Building #199, Mao Tse Tung Blvd, Sangkat Tuol Svay Prey2, Khan Chamkamon, Phnom Penh, Cambodia</string>
+    <string name="email_content_panel">Support program: loyalty@metfone.com.kh</string>
+    <string name="customer_service_content_panel">For expert information about Metfone\'s products and services, please call our Call Center on 1777 or 097 9 097 097 (24h/7)</string>
+    <string name="language">ភាសា</string>
+    <string name="gift">Gift</string>
+    <string name="gift_code">Code gift</string>
+    <string name="verify">Verify</string>
+    <string name="gift_name">Gift name</string>
+    <string name="date">Date</string>
+    <string name="partner_name">Partner name</string>
+    <string name="exchange_gift">Exchange gift</string>
+    <string name="are_you_sure">តើ​អ្នក​ប្រាកដ​ឬ​អត់?</string>
+    <string name="transaction_information">ព័ត៌មានប្រតិបត្តិការ</string>
+    <string name="start_date">កាលបរិច្ឆេទ</string>
+    <string name="cancel">បោះបង់</string>
+    <string name="end_date">ចុងបញ្ចប់នៃកាលបរិច្ឆេទ</string>
+    <string name="yesterday">ម្សិលមិញ</string>
+    <string name="last_30_days">៣០ថ្ងៃចុងក្រោយ</string>
+    <string name="ok">យល់ព្រម</string>
+    <string name="new_passord_not_match">ការបញ្ជាក់លេខសម្ងាត់មិនត្រឹមត្រូវ</string>
+    <string name="if_dont_receive">ករណីមិនបានទទួល</string>
+    <string name="s_is_required">ចន្លោះ​ត្រូវ​បំពេញ</string>
+    <string name="scan_code">Scan code</string>
+    <string name="discount">Discount</string>
+    <string name="filter">Filter</string>
+    <string name="rank">Rank</string>
+    <string name="already_have_an_account">តើអ្នកមានគណនីរួចហើយឬនៅ?</string>
+    <string name="forgot_password">ភ្លេច​លេខសម្ងាត់</string>
+    <string name="cannot_detect_qrcode">Can not detect QR code</string>
+    <string name="notify_network_error">មិនមាននៅក្នុងបណ្តាញ សូម​ព្យាយាម​ម្តង​ទៀត!</string>
+    <string name="cannot_connect_to_server">មិនអាចភ្ជាប់ទៅម៉ាស៊ីនបម្រើ</string>
+</resources>

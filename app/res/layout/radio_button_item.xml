@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RadioButton android:id="@+id/btnRadio"
+    style="@style/RadioButtonMV"
+    android:layout_marginTop="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

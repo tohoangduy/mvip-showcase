@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen1dp">1dp</dimen>
+    <dimen name="dimen10dp">10dp</dimen>
+
+    <dimen name="header_height">54dp</dimen>
+
+    <dimen name="tab_height">56dp</dimen>
+    <dimen name="btn_height">40dp</dimen>
+    <dimen name="btn_height_header">40dp</dimen>
+
+    <dimen name="line_divide_height">0.5dp</dimen>
+
+    <dimen name="activity_horizontal_margin">6dp</dimen>
+    <dimen name="activity_horizontal_margin_large">15dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="dots_height">30dp</dimen>
+    <dimen name="dots_margin_bottom">60dp</dimen>
+    <dimen name="slide_desc">16sp</dimen>
+    <dimen name="desc_padding">40dp</dimen>
+    <dimen name="title_intro_text_size">26sp</dimen>
+    <dimen name="intro_slide_padding_bottom">120dp</dimen>
+    <dimen name="icon_inner_edittext_size">22dp</dimen>
+    <dimen name="space_vertical">25dp</dimen>
+    <dimen name="padding_button">50dp</dimen>
+    <dimen name="space_left_right">15dp</dimen>
+    <dimen name="mm_btn_size">150dp</dimen>
+    <dimen name="btn_min_width">180dp</dimen>
+    <dimen name="space_card_info_element">15dp</dimen>
+    <dimen name="frgmt_margin_top">25dp</dimen>
+    <dimen name="header_padding_bottom">40dp</dimen>
+    <dimen name="margin_left_right_date_picker">10dp</dimen>
+    <dimen name="item_cus_padding_content">8dp</dimen>
+    <dimen name="bottom_bar_height">58dp</dimen>
+    <dimen name="margin_top_select_language">28dp</dimen>
+</resources>

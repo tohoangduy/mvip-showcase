@@ -1,0 +1,183 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/navigation_bar</item>
+        <item name="colorPrimaryDark">@color/navigation_bar</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="ThemeActivityFirst" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowDisablePreview">true</item>
+        <item name="colorPrimary">@color/navigation_bar</item>
+        <item name="colorPrimaryDark">@color/navigation_bar</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.Picker" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColorPrimary">@color/text_color1</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <!-- Base style begin -->
+
+    <style name="BaseStyle_ButtonOK" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/btn_height</item>
+        <item name="android:textColor">@drawable/button_ok_text_color</item>
+        <item name="android:background">@drawable/bg_btn1_state</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="BaseStyle_ButtonCancel" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/btn_height</item>
+        <item name="android:textColor">@color/text_btn2_color_state</item>
+        <item name="android:background">@drawable/bg_btn_close</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <!-- Base style end -->
+
+    <style name="DlgFlash_Animation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="EditTextMV">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">54dp</item>
+        <item name="android:background">@drawable/edittext_shadow</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/hint_text</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:lines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingLeft">45dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+    <style name="EditTextMVIconLeft">
+        <item name="android:layout_width">@dimen/icon_inner_edittext_size</item>
+        <item name="android:layout_height">@dimen/icon_inner_edittext_size</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_gravity">left|center_vertical</item>
+    </style>
+    <style name="EditTextMVIconRight">
+        <item name="android:layout_width">@dimen/icon_inner_edittext_size</item>
+        <item name="android:layout_height">@dimen/icon_inner_edittext_size</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:layout_gravity">right|center_vertical</item>
+    </style>
+
+
+    <style name="Header_Button">
+        <item name="android:layout_width">@dimen/btn_height_header</item>
+        <item name="android:layout_height">@dimen/btn_height_header</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <!--<style name="KHTT02_Btn1" parent="Widget.AppCompat.Button.Borderless">-->
+    <!--<item name="android:layout_width">match_parent</item>-->
+    <!--<item name="android:layout_height">@dimen/btn_height</item>-->
+    <!--<item name="android:layout_alignParentBottom">true</item>-->
+    <!--<item name="android:layout_margin">15dp</item>-->
+    <!--<item name="android:background">@drawable/bg_btn1_state</item>-->
+    <!--<item name="android:textColor">@color/text_btn1_color_state</item>-->
+    <!--<item name="android:textSize">18dp</item>-->
+    <!--<item name="android:textAllCaps">true</item>-->
+    <!--</style>-->
+
+    <!--<style name="KHTT05_Btn1" parent="Widget.AppCompat.Button.Borderless">-->
+    <!--<item name="android:layout_width">match_parent</item>-->
+    <!--<item name="android:layout_height">@dimen/btn_height</item>-->
+    <!--<item name="android:layout_marginLeft">15dp</item>-->
+    <!--<item name="android:layout_marginRight">15dp</item>-->
+    <!--<item name="android:layout_marginBottom">15dp</item>-->
+    <!--<item name="android:background">@drawable/bg_btn1_state</item>-->
+    <!--<item name="android:textColor">@color/text_btn1_color_state</item>-->
+    <!--<item name="android:textSize">18dp</item>-->
+    <!--<item name="android:textAllCaps">true</item>-->
+    <!--</style>-->
+
+    <!--<color name="header_text_util">#9D9FA2</color>-->
+
+    <style name="AppTheme.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="TextTitleApp">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">26dp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="RadioButtonMV">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">30dp</item>
+        <item name="android:drawableRight">@drawable/btn_radio</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:layout_marginBottom">6dp</item>
+    </style>
+
+    <style name="flashButtonStyle">
+        <item name="android:button">@drawable/flash_button</item>
+<!--        <item name="android:scaleX">0.9</item>-->
+<!--        <item name="android:scaleY">0.9</item>-->
+    </style>
+
+    <style name="bottomBarTextview">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="HomeButton" parent="CardView">
+        <item name="android:layout_width">@dimen/mm_btn_size</item>
+        <item name="android:layout_height">@dimen/mm_btn_size</item>
+        <item name="android:layout_columnWeight" tools:ignore="NewApi">1</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="cardBackgroundColor">@color/white</item>
+        <item name="cardCornerRadius">10dp</item>
+        <item name="cardElevation">5dp</item>
+        <item name="cardUseCompatPadding">true</item>
+    </style>
+
+    <style name="HomeButton.ImageView">
+        <item name="android:layout_width">66dp</item>
+        <item name="android:layout_height">66dp</item>
+        <item name="android:layout_marginBottom">30dp</item>
+    </style>
+
+    <style name="HomeButton.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxWidth">140dp</item>
+        <item name="android:paddingBottom">12dp</item>
+    </style>
+
+    <style name="PopupFilterGroupTitleStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+</resources>

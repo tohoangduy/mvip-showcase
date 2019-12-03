@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true">
+
+    <include layout="@layout/header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin_large"
+        android:layout_marginRight="@dimen/activity_horizontal_margin_large">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_vertical"
+                android:orientation="horizontal">
+
+                <com.mq.myvtg.ui.EdRobotoRegular
+                    android:id="@+id/edPhoneNumber"
+                    style="@style/EditTextMV"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:enabled="false"
+                    android:hint="@string/phone_number"
+                    tools:ignore="Deprecated" />
+
+                <ImageView
+                    style="@style/EditTextMVIconLeft"
+                    android:src="@drawable/ic_phone" />
+            </FrameLayout>
+
+            <include
+                android:id="@+id/validatePhoneNumber"
+                android:visibility="gone"
+                layout="@layout/error_inline" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_vertical"
+                android:orientation="horizontal">
+
+                <com.mq.myvtg.ui.EdRobotoRegular
+                    android:id="@+id/edOldPassword"
+                    style="@style/EditTextMV"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:maxLength="30"
+                    android:hint="@string/label_old_pwd" />
+
+                <ImageView
+                    style="@style/EditTextMVIconLeft"
+                    android:src="@drawable/ic_lock" />
+
+                <ImageButton
+                    android:id="@+id/btnShowOldPassword"
+                    style="@style/EditTextMVIconRight"
+                    android:background="@drawable/ic_eye"
+                    android:clickable="true"/>
+            </FrameLayout>
+
+            <include
+                android:id="@+id/validateOldPassword"
+                android:visibility="gone"
+                layout="@layout/error_inline" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_vertical"
+                android:orientation="horizontal">
+
+                <com.mq.myvtg.ui.EdRobotoRegular
+                    android:id="@+id/edNewPassword"
+                    style="@style/EditTextMV"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:maxLength="30"
+                    android:hint="@string/label_password" />
+
+                <ImageView
+                    style="@style/EditTextMVIconLeft"
+                    android:src="@drawable/ic_lock" />
+
+                <ImageButton
+                    android:id="@+id/btnShowNewPassword"
+                    style="@style/EditTextMVIconRight"
+                    android:background="@drawable/ic_eye"
+                    android:clickable="true"/>
+            </FrameLayout>
+
+            <include
+                android:id="@+id/validateNewPassword"
+                android:visibility="gone"
+                layout="@layout/error_inline" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_vertical"
+                android:orientation="horizontal">
+
+                <com.mq.myvtg.ui.EdRobotoRegular
+                    android:id="@+id/edNewPasswordConfirm"
+                    style="@style/EditTextMV"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:maxLength="30"
+                    android:hint="@string/confirm_password" />
+
+                <ImageView
+                    style="@style/EditTextMVIconLeft"
+                    android:src="@drawable/ic_lock" />
+
+                <ImageButton
+                    android:id="@+id/btnShowConfirmPassword"
+                    style="@style/EditTextMVIconRight"
+                    android:background="@drawable/ic_eye"
+                    android:clickable="true"/>
+            </FrameLayout>
+
+            <include
+                android:id="@+id/validateNewPasswordConfirm"
+                android:visibility="gone"
+                layout="@layout/error_inline" />
+
+            <LinearLayout
+                android:id="@+id/btnChangePwd"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/version_2_background_button_login"
+                android:clickable="true">
+
+                <com.mq.myvtg.ui.TVRobotoBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="@dimen/btn_min_width"
+                    android:text="@string/label_change_pwd"
+                    android:textAlignment="center"
+                    android:textColor="@color/white_alpha100"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

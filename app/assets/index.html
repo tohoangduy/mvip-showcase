@@ -1,0 +1,57 @@
+
+<html>
+<header>
+    <link rel="stylesheet" href="file:///android_asset/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style>
+            @font-face {
+                font-family: roboto;
+                src: url('file:///android_asset/Roboto-Regular.ttf');
+            }
+            h1{
+                color:#01a19a;
+                font-size:16px;
+            }
+            h2{
+                font-size:15px;
+            }
+        </style>
+</header>
+<body>
+<script type="text/javascript" src="file:///android_asset/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="file:///android_asset/materialize.min.js"></script>
+
+<div>
+    <div>
+        <img style="width:100%" src="http://metfone.com.kh/Uploads/images/slider/Banner_Wesite_super_exchange_july_eng(1).png">
+    </div>
+    <div style="padding-left:7px">
+        <div>
+            <h1>EXCHANGE MONEY SERVICE</h1>
+            <h2>Choose type to exchange</h2>
+        </div>
+        <div>
+            <input type="radio" id="exhange100" name="exchangeSelector" value="30" checked="true"/> <label for="exhange100">Exchange 1$ = 100$</label></br>
+            <input type="radio" id="exhange300" name="exchangeSelector" value="150" /> <label for="exhange300">Exchange 2$ = 300$</label>
+        </div>
+        <div align="center" style='position:fixed; bottom:20px; left:0px; right:0px;'>
+            <button class="btn waves-effect waves-light" style="width:80%" onclick="doActionService();">EXCHANGE</button>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+			function doActionService() {
+				var exchangeVal = "100";
+				var actionType = "2";
+
+				if(document.getElementById("exhange300").checked) {
+					exchangeVal = "300";
+                    actionType = "3";
+				};
+
+				Android.doActionService("wsDoActionService", "performDoActionService", "Do you want to exchange " + exchangeVal + " $", "", "", actionType, "EXCHANGE-MONEY-" + exchangeVal, "");
+			};
+		</script>
+</body>
+</html>

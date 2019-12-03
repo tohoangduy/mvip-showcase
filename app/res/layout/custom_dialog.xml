@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        tools:ignore="ContentDescription,HardcodedText,RtlHardcoded,SpUsage,RtlSymmetry"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/dialog_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/dialogHeader"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageButton
+                android:id="@+id/btn_close"
+                style="@style/Header_Button"
+                android:layout_alignParentRight="true"
+                android:padding="8dp"
+                android:visibility="gone"
+                android:src="@drawable/bg_btn_state_close_orange"/>
+
+            <com.mq.myvtg.ui.TVRobotoMedium
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/btn_close"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:lines="1"
+                android:ellipsize="end"
+                android:gravity="left|center"
+                android:text="@string/label_xac_nhan"
+                android:textAllCaps="true"
+                android:textSize="20sp"/>
+
+            <ImageView
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_divide_height"
+                android:background="@color/dlg_line_color_01"/>
+
+        </RelativeLayout>
+
+        <com.mq.myvtg.ui.TVRobotoRegular
+            android:id="@+id/tv_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Bạn muốn đăng ký dịch vụ Ứng tiền?"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/dlg_text_color_01" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/btn_negative"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="end|center_vertical"
+                android:background="@drawable/bg_btn_negative"
+                android:layout_marginRight="15dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <com.mq.myvtg.ui.TVRobotoBold
+                    android:id="@+id/label_btn_negative"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cancel"
+                    android:textAlignment="center"
+                    android:textColor="@color/white_alpha100"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_positive"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="end|center_vertical"
+                android:background="@drawable/version_2_background_button_login"
+                android:clickable="true"
+                android:focusable="true">
+
+                <com.mq.myvtg.ui.TVRobotoBold
+                    android:id="@+id/label_btn_positive"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ok"
+                    android:textAlignment="center"
+                    android:textColor="@color/white_alpha100"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+</LinearLayout>

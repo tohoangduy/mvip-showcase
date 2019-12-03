@@ -1,0 +1,202 @@
+<resources>
+    <string name="app_name">mVIP</string>
+    <string name="api_prefix">855</string>
+    <string name="app_code">MyVTG</string>
+
+    <!-- Common strings -->
+    <string name="label_yes">Yes</string>
+    <string name="label_no">No</string>
+    <string name="label_search">Search</string>
+    <string name="label_close">Close</string>
+    <string name="msg_confirm_logout">Do you want to logout?</string>
+    <string name="label_btn_confirm_agree">YES</string>
+    <string name="currency_unit">$</string>
+    <string name="format_currency_double">#,###,###.##</string>
+    <string name="format_currency_integer">#,###,###</string>
+    <string name="str_time_hour">hour</string>
+    <string name="str_time_minute">min</string>
+    <string name="str_time_second">sec</string>
+
+    <!-- Login -->
+    <string name="label_password">Password</string>
+    <string name="label_forgot_password">Forgot password?</string>
+    <string name="label_do_not_have_account">Don\'t have account?</string>
+    <string name="label_signup">Sign up</string>
+    <string name="label_resend">Resend!</string>
+    <string name="msg_warning_enter_otp">Please enter OTP</string>
+
+    <!-- Home -->
+
+    <!-- Home Detail -->
+
+    <!-- Tra Cuoc -->
+    <!-- REMEMBER to keep space beetween time and date -->
+
+    <!-- Nap Cuoc -->
+
+    <!-- Utilities -->
+
+    <!--Services-->
+
+    <!-- KH than thiet -->
+
+    <!-- Mua số -->
+
+    <!-- Đổi số -->
+
+    <!-- More -->
+
+    <!-- Person Info -->
+
+    <!-- Person Info edit -->
+    <string name="label_btn_update">UPDATE</string>
+    <string name="label_btn_close">CLOSE</string>
+
+    <!-- Change Password -->
+    <string name="label_change_pwd">Change password</string>
+    <string name="label_old_pwd">Old password</string>
+    <string name="label_new_pwd">New password</string>
+
+    <!-- Find Store -->
+
+    <string name="confirm_quit_app">Do you want to exit application?</string>
+
+    <!--Thông tin chi tiết tài khoản-->
+
+    <!--Ứng tiền-->
+
+    <!--Chuyển tiền-->
+    <!--Đổi gói (Mua thêm) Data-->
+
+
+    <!--Đổi sim-->
+
+    <!--Apps-->
+
+    <!--Dialog-->
+    <string name="label_xac_nhan">Confirmation</string>
+    <string name="label_ok">OK</string>
+
+    <!--Khóa chiều gọi đi-->
+
+    <!--Restore phone number-->
+
+    <!--Chăm sóc khách hàng-->
+
+    <!--Khuyến mại-->
+
+    <!--Tin tức-->
+
+    <!--Trải nghiệm-->
+
+    <!--Sign up-->
+
+    <!--Dialog and Notification-->
+
+    <string name="msg_no_internet_connection">No internet connection!</string>
+    <string name="msg_change_pwd_same_pass">The new password must be different from the old password</string>
+    <string name="msd_invalid_password_length">Passwords must be %1$s characters long</string>
+    <string name="button_ok">OK</string>
+    <!-- <string name="label_langue_name">English</string> -->
+    <string name="msg_camera_framework_bug">Camera is not working.</string>
+    <!--lifesup_sprint_2_T8_2018_start-->
+    <!--<string name="confirmation_change_language">ការបញ្ជាក់</string>-->
+    <!--<string name="change_language_yes">បាទ</string>-->
+    <!--<string name="change_language_close">បិទ</string>-->
+    <!--lifesup_sprint_2_T8_2018_end-->
+    <string name="decimal_dot">.</string>
+    <string name="thousand_dot">,</string>
+    <string name="url_google_play_app">https://play.google.com/store/apps/details?id=com.metfone.selfcare</string>
+    <string name="title_new_update">New update</string>
+    <string name="label_btn_later">LATER</string>
+    <string name="label_recharge">Scan QR code</string>
+
+    <!--update subscriber-->
+    <string name="verify_code">Verify code</string>
+    <string name="next">Next</string>
+    <string name="subscriber_infor_title">Information</string>
+    <string name="confirm">Confirm</string>
+
+    <string name="label_type">Type</string>
+
+    <string name="dlg_buy_num_title">Notification</string>
+    <string name="dlg_buy_num_content">Thank you for using Metfone. The PIN number has been sent to you via SMS, please use this PIN number to buy at any Metfone’s showroom” within 24 hours. Call 1777/0979097097 if you don’t get PIN number</string>
+
+    <string name="chat_call_host_ipcc">https://myccpublic.metfone.com.kh:8001</string>
+
+    <!-- label for ipcc -->
+    <string name="label_customer_service_name">Customer service</string>
+
+    <!-- feature - share -->
+    <string name="invite_toolbar_button_done">Done</string>
+
+
+    <!-- Redeem -->
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="find_information">Find information</string>
+    <string name="slide_desc1">Vestibulum metus nisl, varius non pellentesque ut, tincidunt vitae mi. Praesent auctor, nunc id semper lobortis</string>
+    <string name="slide_desc2">Vestibulum metus nisl, varius non pellentesque ut, tincidunt vitae mi. Praesent auctor, nunc id semper lobortis</string>
+    <string name="slide_desc3">Vestibulum metus nisl, varius non pellentesque ut, tincidunt vitae mi. Praesent auctor, nunc id semper lobortis</string>
+    <string name="qr_code">QR code</string>
+    <string name="home_page">Home page</string>
+    <string name="skip">Skip</string>
+    <string name="login_account">Login account</string>
+    <string name="phone_number">Phone number</string>
+    <string name="sign_in">Sign in</string>
+    <string name="label_hotline">Hotline: 097 6 097 097</string>
+    <string name="label_website">vip.metfone.com.kh</string>
+    <string name="choose_language">Choose language</string>
+    <string name="str_continue">Continue</string>
+    <string name="input_otp">Input OTP</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="partner_code">Partner code</string>
+    <string name="welcome">Welcome</string>
+    <string name="transaction_infor">Transaction infor</string>
+    <string name="setting">Setting</string>
+    <string name="language">Language</string>
+    <string name="other">Other</string>
+    <string name="help">Help</string>
+    <string name="contact">Contact</string>
+    <string name="about">About</string>
+    <string name="sign_out">Sign out</string>
+    <string name="save">Save</string>
+    <string name="site">Site</string>
+    <string name="today">Today</string>
+    <string name="your_phone_number">Your phone number</string>
+    <string name="password_and_confirm_password_not_same">Password and confirm password not same</string>
+    <string name="url_website" translatable="false">https://vip.metfone.com.kh</string>
+    <string name="address">Address</string>
+    <string name="email">Email</string>
+    <string name="address_metfone_building">Address: Building #199, Mao Tse Tung Blvd, Sangkat Tuol Svay Prey2, Khan Chamkamon, Phnom Penh, Cambodia</string>
+    <string name="email_content_panel">Support program: loyalty@metfone.com.kh</string>
+    <string name="customer_service_content_panel">For expert information about Metfone\'s products and services, please call our Call Center on 1777 or 097 9 097 097 (24h/7)</string>
+    <string name="gift">Gift</string>
+    <string name="gift_code">Gift code</string>
+    <string name="verify">Verify</string>
+    <string name="isdn" translatable="false">ISDN</string>
+    <string name="gift_name">Gift name</string>
+    <string name="date">Date</string>
+    <string name="partner_name">Partner name</string>
+    <string name="exchange_gift">Exchange gift</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="transaction_information">Transaction information</string>
+    <string name="start_date">Start date</string>
+    <string name="cancel">Cancel</string>
+    <string name="end_date">End date</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="last_30_days">Last 30 days</string>
+    <string name="ok">OK</string>
+    <string name="new_passord_not_match">Confirm password does not match</string>
+    <string name="if_dont_receive">If don\'t receive</string>
+    <string name="s_is_required">%s is required</string>
+    <string name="scan_code">Scan code</string>
+    <string name="discount">Discount</string>
+    <string name="filter">Filter</string>
+    <string name="rank">Rank</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="cannot_detect_qrcode">Can not detect QR code</string>
+    <string name="notify_network_error">Network is not available. Please try again!</string>
+    <string name="cannot_connect_to_server">Cannot connect to server</string>
+</resources>

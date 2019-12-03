@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Pin the domain *.viettelglobal.net -->
+    <!-- Official Android N API -->
+    <domain-config>
+        <domain includeSubdomains="true">viettelglobal.net</domain>
+        <pin-set>
+            <pin digest="SHA-256">Ajv4oJKTO/bxwWPBDRkcKDyhO2VJtZNw1Ha7VYEXXwY=</pin>
+            <pin digest="SHA-256">nKWcsYrc+y5I8vLf1VGByjbt+Hnasjl+9h8lNKJytoE=</pin>
+        </pin-set>
+        <!-- TrustKit Android API -->
+        <trustkit-config enforcePinning="true" disableDefaultReportUri="true">
+            <!-- Add a reporting URL for pin validation reports -->
+            <!--<report-uri>http://report.datatheorem.com/log_report</report-uri>-->
+        </trustkit-config>
+    </domain-config>
+    <debug-overrides>
+        <trust-anchors>
+            <!-- For debugging purposes, add a debug CA and override pins -->
+            <!--<certificates overridePins="true" src="@raw/debugca" />-->
+        </trust-anchors>
+    </debug-overrides>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

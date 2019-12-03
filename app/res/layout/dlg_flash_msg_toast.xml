@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/layout_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_flash_msg_e"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="8dp">
+
+        <ImageView
+            android:id="@+id/img_icon"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_dlg_flash_error"/>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/btn_close"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/bg_btn_state_close"/>
+
+        <com.mq.myvtg.ui.TVRobotoRegular
+            android:id="@+id/tv_msg"
+            android:layout_toRightOf="@id/img_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="0dp"
+            android:minHeight="22dp"
+            android:gravity="left|center"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:text="Message"/>
+
+    </RelativeLayout>
+</RelativeLayout>

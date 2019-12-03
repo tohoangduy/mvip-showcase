@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin_large"
+    android:layout_marginRight="@dimen/activity_horizontal_margin_large"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/header" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_vertical">
+
+        <com.mq.myvtg.ui.EdRobotoRegular
+            android:id="@+id/edGiftCode"
+            style="@style/EditTextMV"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:hint="@string/gift_code" />
+
+        <ImageView
+            android:id="@+id/icVerifyCode"
+            style="@style/EditTextMVIconLeft"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_verify_code" />
+
+    </FrameLayout>
+
+    <include
+        android:id="@+id/validateGiftCode"
+        android:visibility="gone"
+        layout="@layout/error_inline" />
+
+    <LinearLayout
+        android:id="@+id/btnVerify"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/version_2_background_button_login"
+        android:clickable="true"
+        android:focusable="true">
+
+        <com.mq.myvtg.ui.TVRobotoBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding_button"
+            android:paddingRight="@dimen/padding_button"
+            android:text="@string/verify"
+            android:textAlignment="center"
+            android:textColor="@color/white_alpha100"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

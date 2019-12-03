@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+
+    <color name="icon_color_s">#f09d31</color>
+    <color name="icon_color_n">#F05431</color>
+
+    <!-- Button -->
+    <color name="button_text_color_n">#01a19a</color>
+    <color name="button_text_color_s">#01a19a</color>
+    <color name="button_text_active_color">#01a19a</color>
+    <color name="button_background_color_n">#d4fcfa</color>
+    <color name="button_background_stroke_color_n">#d4fcfa</color>
+    <color name="button_background_color_s">#FAFAFA</color>
+    <color name="button_background_stroke_color_s">#d4fcfa</color>
+
+    <!-- text color -->
+    <color name="text_default_active_color">#01a19a</color>
+
+    <!-- Header -->
+
+    <!-- HOME -->
+</resources>

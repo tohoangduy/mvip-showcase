@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="locale_supported">
+        <item>en_US</item>
+        <item>kh_KH</item>
+        <item>vi_VN</item>
+        <item>zh_CN</item>
+    </string-array>
+    <string-array name="scan_types">
+        <item>All</item>
+        <item>Scan customer information</item>
+        <item>Scan gift code</item>
+    </string-array>
+</resources>

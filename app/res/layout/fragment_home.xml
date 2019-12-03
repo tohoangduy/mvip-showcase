@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="start"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp">
+            <TextView
+                android:id="@+id/tvWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/tvIsdn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnSelectLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="end"
+            android:layout_marginRight="5dp"
+            android:clickable="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="7dp"
+            android:focusable="true">
+            <TextView
+                android:id="@+id/labelLanguage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/white"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_arrow_drop_down"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcSlideShow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:scrollbars="none">
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:id="@+id/layoutDots"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dots_height"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:layout_marginBottom="40dp"
+            android:orientation="horizontal"/>
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <GridLayout
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btnQrCode"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                style="@style/HomeButton">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:src="@drawable/ic_scan"
+                        style="@style/HomeButton.ImageView"
+                        card_view:layout_constraintTop_toTopOf="parent"
+                        card_view:layout_constraintBottom_toBottomOf="parent"
+                        card_view:layout_constraintLeft_toLeftOf="parent"
+                        card_view:layout_constraintRight_toRightOf="parent"
+                        tools:ignore="ContentDescription" />
+                    <TextView
+                        android:id="@+id/tvQrCode"
+                        android:text="@string/qr_code"
+                        style="@style/HomeButton.TextView"
+                        card_view:layout_constraintBottom_toBottomOf="parent"
+                        card_view:layout_constraintLeft_toLeftOf="parent"
+                        card_view:layout_constraintRight_toRightOf="parent"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btnTranscantion"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                style="@style/HomeButton">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:src="@drawable/ic_transform"
+                        style="@style/HomeButton.ImageView"
+                        card_view:layout_constraintTop_toTopOf="parent"
+                        card_view:layout_constraintBottom_toBottomOf="parent"
+                        card_view:layout_constraintLeft_toLeftOf="parent"
+                        card_view:layout_constraintRight_toRightOf="parent"
+                        tools:ignore="ContentDescription" />
+                    <TextView
+                        android:id="@+id/tvTranscantion"
+                        android:text="@string/transaction_information"
+                        style="@style/HomeButton.TextView"
+                        card_view:layout_constraintBottom_toBottomOf="parent"
+                        card_view:layout_constraintLeft_toLeftOf="parent"
+                        card_view:layout_constraintRight_toRightOf="parent"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btnGift"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                style="@style/HomeButton">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:src="@drawable/ic_gift"
+                        style="@style/HomeButton.ImageView"
+                        card_view:layout_constraintTop_toTopOf="parent"
+                        card_view:layout_constraintBottom_toBottomOf="parent"
+                        card_view:layout_constraintLeft_toLeftOf="parent"
+                        card_view:layout_constraintRight_toRightOf="parent"
+                        tools:ignore="ContentDescription" />
+                    <TextView
+                        android:text="@string/gift"
+                        style="@style/HomeButton.TextView"
+                        card_view:layout_constraintBottom_toBottomOf="parent"
+                        card_view:layout_constraintLeft_toLeftOf="parent"
+                        card_view:layout_constraintRight_toRightOf="parent"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btnSetting"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                style="@style/HomeButton">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:src="@drawable/ic_setting"
+                        style="@style/HomeButton.ImageView"
+                        card_view:layout_constraintTop_toTopOf="parent"
+                        card_view:layout_constraintBottom_toBottomOf="parent"
+                        card_view:layout_constraintLeft_toLeftOf="parent"
+                        card_view:layout_constraintRight_toRightOf="parent"
+                        tools:ignore="ContentDescription" />
+                    <TextView
+                        android:id="@+id/tvSetting"
+                        android:text="@string/setting"
+                        style="@style/HomeButton.TextView"
+                        card_view:layout_constraintBottom_toBottomOf="parent"
+                        card_view:layout_constraintLeft_toLeftOf="parent"
+                        card_view:layout_constraintRight_toRightOf="parent"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+    </ScrollView>
+</LinearLayout>

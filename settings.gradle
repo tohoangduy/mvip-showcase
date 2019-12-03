@@ -1,0 +1,1 @@
+include ':app', ':android-async-http-1.4.7', ':zxing-lib-extended', ':trustkit-1.1.0'
